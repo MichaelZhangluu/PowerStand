@@ -11,6 +11,7 @@
 
 ---
 # 1. Executive Summary
+
 PowerStand is an open-source digital model railroad control stand designed to deliver a realistic, tactile, and highly configurable locomotive operating experience.
 The system combines dedicated physical controls, touchscreen interaction, embedded hardware, and support for multiple train-control protocols into a single operator console.
 PowerStand emphasizes physical operation through locomotive-inspired controls including a throttle lever, brake lever, reverser, horn, and lighting controls etc.
