@@ -10,19 +10,12 @@
 | Date         | 2026-10-26       |
 
 ---
-
 # 1. Executive Summary
-
 PowerStand is an open-source digital model railroad control stand designed to deliver a realistic, tactile, and highly configurable locomotive operating experience.
-
-The system combines dedicated physical controls, touchscreen interaction, modern embedded hardware, and support for multiple train-control protocols into a single operator console.
-
-Unlike smartphone-based throttles and touchscreen-only controllers, PowerStand emphasizes physical operation through locomotive-inspired controls including a throttle lever, brake lever, reverser, horn, and lighting controls.
-
-The platform is built around an ESP32-S3 and a 7-inch touchscreen display, while maintaining support for future hardware expansion and software enhancements.
-
+The system combines dedicated physical controls, touchscreen interaction, embedded hardware, and support for multiple train-control protocols into a single operator console.
+PowerStand emphasizes physical operation through locomotive-inspired controls including a throttle lever, brake lever, reverser, horn, and lighting controls etc.
+The platform is built around an ESP32 hardware platform, a 7-inch touchscreen display, and other control hardwares inlcuding switches, rotary encoders, I/O extenders, mono LCD displays etc., while maintaining support for future hardware expansion and software enhancements.
 The primary control protocol shall be DCC-EX, with WiThrottle support provided for interoperability with JMRI and other compatible systems.
-
 ---
 
 # 2. Vision Statement
