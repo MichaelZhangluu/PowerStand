@@ -12,7 +12,7 @@
 ---
 # 1. Executive Summary
 
-PowerStand is an open-source digital model railroad control stand designed to deliver a realistic, tactile, and highly configurable locomotive operating experience.
+PowerStand is a community-source digital model railroad control stand designed to deliver a realistic, tactile, and highly configurable locomotive operating experience.
 
 The system combines dedicated physical controls, touchscreen interaction, embedded hardware, and support for multiple train-control protocols into a single operator console.
 
@@ -94,10 +94,10 @@ PowerStand shall support:
 
 - Locomotive acquisition (short and long addresses)
 - Speed control (combined target speed control with throttle and brake inputs)
-- Direction control (Forward, Nutual and Backward)
+- Direction control (Forward, Neutral and Backward)
 - Function control (CV numbers are mapped to actual customized locomotive function)
-- Consist operation (2 major operation modes, physical control and digital control using rotary encoder as single input for speed control)
-- Multiple-unit operation (quick switch amoung aquired locomotives)
+- Consist operation (Creation and management of consists)
+- Locomotive Switching (quick switch amoung aquired locomotives)
 - Turnout control
 - Route control
 - Network discovery
@@ -212,7 +212,53 @@ Responsible for:
 
 ---
 
-# 9. Design Philosophy
+# 9. Control Philosophy
+
+PowerStand is not intended to replicate a smartphone throttle, touchscreen-only application, or traditional handheld DCC controller.
+
+The primary purpose of PowerStand is to provide a locomotive-inspired operating experience through the use of dedicated physical controls while maintaining compatibility with modern digital command systems.
+
+PowerStand shall be designed around the principle that routine train operation is performed using physical controls and not through touchscreen interaction.
+
+Primary driving functions shall always be accessible through dedicated operator controls, including:
+
+- Throttle
+- Brake
+- Reverser
+- Horn
+- Headlight Controls
+- Emergency Stop
+
+Physical controls should provide sufficient tactile feedback to allow an operator to control a locomotive with minimal visual attention.
+
+The touchscreen shall act as an information display and advanced control interface rather than a primary driving interface.
+
+Typical touchscreen functions include:
+
+- Locomotive acquisition and release
+- Function management
+- Consist management
+- Turnout control
+- Route control
+- Diagnostics
+- Configuration
+
+Routine train movement should require little or no touchscreen interaction after a locomotive has been acquired.
+
+PowerStand shall support multiple locomotive operating styles through configurable control profiles. Examples include:
+
+- Chinese steam locomotives
+- Chinese diesel locomotives
+- Chinese electric locomotives
+- North American steam locomotives
+- North American diesel locomotives
+- Generic DCC locomotive operation
+
+Control profiles may modify control mappings, function assignments, display layouts, and operating behaviors while preserving a consistent operator experience.
+
+The ultimate objective of the PowerStand control philosophy is to make train operation intuitive, tactile, immersive, and enjoyable while remaining practical for model railroad operations.
+
+# 10. Design Philosophy
 
 ## Physical-First Operation
 
@@ -272,7 +318,7 @@ Code and documentation shall be structured to support long-term maintenance and 
 
 ---
 
-# 10. Success Criteria
+# 11. Success Criteria
 
 The project shall be considered successful when:
 
@@ -302,7 +348,7 @@ The project can be built and maintained directly from documentation and source c
 
 ---
 
-# 11. Initial Hardware Concept
+# 12. Initial Hardware Concept
 
 The initial PowerStand control stand is expected to include:
 
@@ -320,7 +366,7 @@ The initial PowerStand control stand is expected to include:
 
 ---
 
-# 12. Primary Technology Stack
+# 13. Primary Technology Stack
 
 ## Hardware
 
@@ -348,7 +394,7 @@ The initial PowerStand control stand is expected to include:
 
 ---
 
-# 13. Repository Structure
+# 14. Repository Structure
 
 ```text
 PowerStand/
@@ -380,7 +426,7 @@ PowerStand/
 
 ---
 
-# 14. Planned Documentation
+# 15. Planned Documentation
 
 The following documents shall be developed after approval of this charter.
 
@@ -396,7 +442,7 @@ The following documents shall be developed after approval of this charter.
 
 ---
 
-# 15. Project Motto
+# 16. Project Motto
 
 > Real Controls. Modern Protocols. Open Architecture.
 
