@@ -74,6 +74,9 @@ PowerStand/
 
 ---
 
+The ESP-IDF project can be opened and built from the repository root. Its CMake
+entry point discovers the application and components in `firmware/`.
+
 # Development Status
 
 Current Phase:
