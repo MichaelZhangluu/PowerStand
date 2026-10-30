@@ -29,8 +29,7 @@ extern "C" {
 /**
  * @brief PCF8574 device handle.
  */
-typedef struct i2c_io_expander_pcf8574_t
-    *i2c_io_expander_pcf8574_handle_t;
+typedef struct i2c_io_expander_pcf8574_t *i2c_io_expander_pcf8574_handle_t;
 
 /**
  * @brief PCF8574 configuration structure.
@@ -77,10 +76,7 @@ typedef enum
  *
  * @return esp_err_t
  */
-esp_err_t i2c_io_expander_pcf8574_new(
-    i2c_master_bus_handle_t bus_handle,
-    const i2c_io_expander_pcf8574_config_t *config,
-    i2c_io_expander_pcf8574_handle_t *ret_handle);
+esp_err_t i2c_io_expander_pcf8574_new(i2c_master_bus_handle_t bus_handle, const i2c_io_expander_pcf8574_config_t *config, i2c_io_expander_pcf8574_handle_t *ret_handle);
 
 /**
  * @brief Delete a device instance.

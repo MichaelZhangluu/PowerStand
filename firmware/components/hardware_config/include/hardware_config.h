@@ -63,6 +63,6 @@
 #define I2C_DEVICE_SCL_SPEED_HZ_IO_EXPENDER_PCF8574     (100000) // 100 kHz
 #define I2C_DEVICE_SCL_WAIT_US_IO_EXPENDER_PCF8574      (0) // Timeout value in microseconds
 
-// Hardware Configruation for I2C LCD 2004A
-#define I2C_DEVICE_PORT_NUM_IO_EXPENDER_LCD_2004A       (I2C_MASTER_DEVICE_PORT_NUM)
-#define I2C_DEVICE_ADDRESS_IO_EXPENDER_LCD_2004A        (0x27) // I2C address for the lcd 2004A IO expender
+// Hardware Configuration for I2C LCD controller HD44780 with PCF8574 I2C backpack
+#define I2C_DEVICE_PORT_NUM_I2C_LCD_PCF8574     (I2C_MASTER_DEVICE_PORT_NUM)
+#define I2C_DEVICE_ADDRESS_I2C_LCD_PCF8574      (0x27) // I2C address for the lcd 2004A IO expender
